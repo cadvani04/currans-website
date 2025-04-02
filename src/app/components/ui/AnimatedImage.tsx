@@ -1,7 +1,13 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-export default function AnimatedImage({ src, alt, className }) {
+interface AnimatedImageProps {
+  src: string;
+  alt: string;
+  className?: string;
+}
+
+export default function AnimatedImage({ src, alt, className }: AnimatedImageProps) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.95 }}

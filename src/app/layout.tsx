@@ -1,14 +1,7 @@
-import '@/app/styles/globals.css';
+import './styles/globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import Header from '@/app/components/layout/Header';
 import Footer from '@/app/components/layout/Footer';
-
-// Configure the font with a display strategy
-const inter = Inter({ 
-  subsets: ['latin'],
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   title: 'Curran Advani - Portfolio',
@@ -22,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="font-sans">
         <Header />
         <main>{children}</main>
         <Footer />
