@@ -4,7 +4,11 @@ import { Inter } from 'next/font/google';
 import Header from '@/app/components/layout/Header';
 import Footer from '@/app/components/layout/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
+// Configure the font with a display strategy
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Curran Advani - Portfolio',
